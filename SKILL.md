@@ -1,13 +1,13 @@
 ---
 name: jcble-mam
-description: This skill should be used for company content operations, copywriting assistant workflows, online market promotion, and multi-Agent marketing team setup. Use it when creating or running a reusable company content and marketing Agent team, building independent Codex role sessions, coordinating document management, solution writing, product copy, PPT work, visual briefs, market research, customer discovery, email outreach drafts, and weekly or monthly performance reviews.
+description: This skill should be used for multilingual company content operations, copywriting assistant workflows, online market promotion, and multi-Agent marketing team setup. Use it when creating or running a reusable company content and marketing Agent team, building independent Codex role sessions, coordinating document management, solution writing, product copy, PPT work, visual briefs, market research, customer discovery, email outreach drafts, weekly or monthly performance reviews, and Markdown deliverables in Chinese, English, Spanish, Japanese, or Korean.
 ---
 
 # Jcble_mam
 
 ## Overview
 
-Operate a company's content, copywriting, and online market-promotion Agent team. Create and coordinate a reusable multi-Agent system for document management, solution planning, content production, product copy, PPT preparation, visual design briefs, market intelligence, industry-news tracking, customer discovery, outreach email drafting, review checks, and platform-data retrospectives.
+Operate a company's content, copywriting, and online market-promotion Agent team. Create and coordinate a reusable multi-Agent system for document management, solution planning, content production, product copy, PPT preparation, visual design briefs, market intelligence, industry-news tracking, customer discovery, outreach email drafting, review checks, and platform-data retrospectives. Support Markdown deliverables in Simplified Chinese, English, Spanish, Japanese, and Korean.
 
 ## When To Use
 
@@ -16,6 +16,7 @@ Use this skill when the task asks to:
 - Create or update a company content, marketing, or copywriting Agent team.
 - Build independent Codex sessions for role Agents and name those sessions.
 - Coordinate multiple writing, solution, market, visual, email, or review Agents.
+- Produce or translate Markdown files in Simplified Chinese, English, Spanish, Japanese, or Korean.
 - Produce task cards, evidence packs, content drafts, customer outreach drafts, or weekly/monthly review outputs.
 - Set up or maintain an Agent session index, message bus, and collaboration protocol.
 
@@ -26,7 +27,8 @@ Before planning or writing:
 1. Read `COMPANY_WORKSPACE/AGENTS.md` or equivalent workspace instructions when available.
 2. Read `COMPANY_WORKSPACE/00.company-material-index.md` or equivalent company-material index when company material, solutions, products, market work, or business planning is involved.
 3. Read `COMPANY_MARKETING_WORKSPACE/01.company-content-marketing-team-manual.md` when an existing team manual exists.
-4. Read the session index and communication files when coordinating existing Agents:
+4. Load `references/multilingual-workflow.md` when the task asks for multilingual Markdown, translation, localization, or non-Chinese output.
+5. Read the session index and communication files when coordinating existing Agents:
    - `COMPANY_MARKETING_WORKSPACE/agent-sessions/00.agent-session-index.md`
    - `COMPANY_MARKETING_WORKSPACE/agent-sessions/01.message-bus.md`
    - `COMPANY_MARKETING_WORKSPACE/agent-sessions/02.collaboration-protocol.md`
@@ -34,7 +36,7 @@ Before planning or writing:
 ## Core Workflow
 
 1. Classify the request as one of three output types: internal management, external-facing content, or technical/product material.
-2. Define the task card: objective, audience, channel, output format, required sources, forbidden sources, deadline, and approval owner.
+2. Define the task card: objective, target language, audience, channel, output format, required sources, forbidden sources, deadline, and approval owner.
 3. Build an evidence pack before drafting. Mark each source as public, internal, restricted, or forbidden.
 4. Select the minimum necessary Agents from the role library in `references/agent-team-roles.md`.
 5. For persistent multi-Agent work, create or reuse independent Codex threads using `references/session-orchestration.md`.
@@ -51,7 +53,8 @@ When asked to create independent Agent sessions:
 3. Name every thread with the pattern `<CompanyOrTeamName>-<Role>Agent`.
 4. Write every thread ID into the session index.
 5. Send each thread an initialization prompt that says to read the company rules, role index, message bus, and collaboration protocol, then stay idle until assigned.
-6. Explain that cross-thread work is coordinated by explicit messages and the shared message bus, not by automatic always-on listening.
+6. State the working language for each thread. Use the requested task language, or Simplified Chinese by default.
+7. Explain that cross-thread work is coordinated by explicit messages and the shared message bus, not by automatic always-on listening.
 
 Load `references/session-orchestration.md` before creating or updating threads.
 
@@ -63,12 +66,14 @@ Load `references/session-orchestration.md` before creating or updating threads.
 - Separate facts, interpretation, and recommended action in internal outputs.
 - Cite source file paths and dates or versions for product parameters, customer names, case results, certifications, prices, and market claims.
 - Draft emails only. Send no email and export no customer list without explicit human approval.
+- For translation or localization, preserve facts, numbers, legal names, source paths, product model names, and approval requirements.
 
 ## Resources
 
 - `references/agent-team-roles.md` - Role library, responsibilities, outputs, and acceptance criteria.
 - `references/session-orchestration.md` - Independent Codex thread creation, naming, synchronization, and communication workflow.
 - `references/company-material-boundaries.md` - Company source map, evidence rules, and sensitive-data boundaries.
+- `references/multilingual-workflow.md` - Markdown language selection, localization rules, file naming, and review checklist.
 - `assets/task-card-template.md` - Task-card template for new work.
 - `assets/message-template.md` - Message-bus entry template.
 - `assets/retrospective-template.md` - Weekly/monthly review template.

@@ -2,6 +2,14 @@
 
 `jcble-mam` is a Codex skill for building and operating a general company content, copywriting assistant, and online market-promotion Agent team.
 
+Supported Markdown languages:
+
+- Simplified Chinese `zh-CN`
+- English `en`
+- Spanish `es`
+- Japanese `ja`
+- Korean `ko`
+
 It packages a reusable workflow for:
 
 - company document management
@@ -16,6 +24,7 @@ It packages a reusable workflow for:
 - outreach email drafting
 - weekly and monthly content or funnel retrospectives
 - persistent multi-Agent Codex session setup
+- multilingual Markdown creation and localization
 
 ## Skill Name
 
@@ -55,6 +64,7 @@ The references describe recommended files and folders. If a company uses differe
 - `references/agent-team-roles.md` - multi-Agent role library
 - `references/session-orchestration.md` - Codex thread creation, naming, synchronization, and message routing
 - `references/company-material-boundaries.md` - company material source map and sensitive-data boundaries
+- `references/multilingual-workflow.md` - multilingual Markdown language rules, localization boundaries, and review checklist
 - `assets/task-card-template.md` - reusable task card
 - `assets/message-template.md` - message-bus entry template
 - `assets/retrospective-template.md` - weekly/monthly review template

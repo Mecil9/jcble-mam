@@ -52,7 +52,8 @@ Default long-running roles:
 3. Create missing threads using the local company project target when possible.
 4. Send each new thread a role-specific initialization prompt:
    - State the role.
-   - Require Chinese by default.
+   - State the working language: `zh-CN`, `en`, `es`, `ja`, or `ko`.
+   - Use Simplified Chinese by default when no language is specified.
    - Require reading `COMPANY_WORKSPACE/AGENTS.md` or equivalent workspace instructions when available.
    - Require reading the company team manual, session index, message bus, and collaboration protocol.
    - Say not to change files and not to execute business tasks during initialization.
@@ -68,6 +69,7 @@ Do not claim that Codex threads automatically listen to each other. Explain this
 
 - Main editor or 主控总编 sends explicit messages to role threads.
 - Role threads respond in their own sessions.
+- Role threads use the task's target language for deliverables and status replies unless the assignment says otherwise.
 - Persistent collaboration state is recorded in the local message bus.
 - The 主控总编 Agent tracks open, acknowledged, done, and blocked messages.
 
@@ -89,6 +91,7 @@ Use this message format:
 - 收件 Agent：
 - 抄送：
 - 关联任务：
+- 目标语言：zh-CN / en / es / ja / ko
 - 优先级：高 / 中 / 低
 - 截止时间：
 - 请求：
@@ -105,6 +108,7 @@ Use this message format:
 
 角色：
 关联任务：
+目标语言：
 目标：
 输入资料：
 禁止使用资料：
