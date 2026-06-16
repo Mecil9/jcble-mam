@@ -1,46 +1,22 @@
 # Jcble_mam
 
-[简体中文](README.zh-CN.md) | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | Español | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-`jcble-mam` es una skill general de Codex para crear y operar flujos de contenido empresarial, redacción, promoción de marketing en línea y equipos colaborativos multi-Agent.
+`jcble-mam` es una skill para Codex orientada a operaciones de contenido empresarial, flujos de redacción, promoción de marketing en línea y coordinación de sesiones multi-Agent.
 
-Idiomas Markdown compatibles:
+Ayuda a Codex a trabajar como un equipo coordinado de contenido y marketing para gestión documental, redacción de propuestas, textos de producto, temas para redes sociales, briefs visuales, investigación de mercado, búsqueda de clientes, borradores de correos y retrospectivas semanales o mensuales.
 
-- Chino simplificado `zh-CN`
-- Inglés `en`
-- Español `es`
-- Japonés `ja`
-- Coreano `ko`
+## Qué hace
 
-## Casos de uso
+- Crea un equipo reutilizable de Agents para contenido y marketing empresarial.
+- Define roles para coordinación editorial, gestión documental, planificación de propuestas, redacción, textos de producto, planificación de PPT, briefs visuales, inteligencia de mercado, búsqueda de clientes, borradores de correo, revisión y retrospectivas.
+- Soporta sesiones persistentes de Codex por rol y un flujo de bus de mensajes.
+- Soporta salida Markdown en chino simplificado, inglés, español, japonés y coreano.
+- Mantiene el contenido externo vinculado a evidencia aprobada y revisión humana.
 
-- Gestión de documentos de empresa
-- Planificación de soluciones y redacción de propuestas
-- Planificación de temas para redes sociales
-- Planificación de PPT corporativos y de soluciones
-- Redacción de textos de producto
-- Briefs visuales para productos, soluciones y material promocional
-- Inteligencia de mercado global
-- Seguimiento de noticias del sector
-- Búsqueda de clientes internacionales
-- Borradores de correos de prospección
-- Retrospectivas semanales y mensuales de contenido, plataformas y leads
-- Configuración de sesiones persistentes multi-Agent en Codex
-- Creación, traducción y localización de Markdown multilingüe
+## Instalación para Codex
 
-## Nombre de la skill
-
-El nombre instalable de la skill es:
-
-```text
-jcble-mam
-```
-
-`Jcble_mam` se mantiene como nombre visible y alias para usuarios. El flujo de trabajo es genérico y puede adaptarse a cualquier empresa.
-
-## Instalación
-
-Clona este repositorio en un directorio de skills de Codex:
+Clona este repositorio en tu directorio de skills de Codex:
 
 ```bash
 git clone https://github.com/Mecil9/jcble-mam.git ~/.agents/skills/jcble-mam
@@ -48,9 +24,35 @@ git clone https://github.com/Mecil9/jcble-mam.git ~/.agents/skills/jcble-mam
 
 Después inicia una nueva sesión de Codex para refrescar el registro de skills.
 
-## Configuración
+Si tu configuración de Codex usa otro directorio de skills, clona el repositorio allí y conserva este nombre de carpeta:
 
-Antes de usar la skill, adapta estos marcadores de posición a tu propio espacio de trabajo:
+```text
+jcble-mam
+```
+
+## Uso básico
+
+Después de instalarlo, pide a Codex lo que necesitas en lenguaje natural. Ejemplos:
+
+```text
+Usa jcble-mam para crear un equipo de contenido y marketing para mi empresa.
+```
+
+```text
+Usa jcble-mam para convertir este documento de producto en texto para web y un borrador de email de prospección.
+```
+
+```text
+Usa jcble-mam para crear sesiones independientes de Codex para editor, redactor, investigación de mercado, brief visual y revisión.
+```
+
+```text
+Usa jcble-mam para escribir este resumen de propuesta en inglés, español, japonés y coreano.
+```
+
+## Configuración del espacio de trabajo
+
+Antes de usar la skill con archivos de empresa, asigna estos marcadores de posición a tu propio espacio de trabajo:
 
 ```text
 COMPANY_WORKSPACE=/path/to/company/workspace
@@ -60,7 +62,7 @@ COMPANY_MARKETING_WORKSPACE=/path/to/company/content-marketing-workspace
 
 Si tu empresa usa otros nombres de carpetas, actualiza los archivos de referencia o crea archivos de índice equivalentes.
 
-## Archivos principales
+## Archivos incluidos
 
 - `SKILL.md` - condiciones de activación y flujo principal
 - `references/agent-team-roles.md` - biblioteca de roles multi-Agent
@@ -73,7 +75,7 @@ Si tu empresa usa otros nombres de carpetas, actualiza los archivos de referenci
 
 ## Notas de seguridad
 
-Antes de publicar externamente:
+Antes de publicar o enviar contenido externamente:
 
 - elimina datos confidenciales de clientes, contratos, finanzas, nómina, credenciales y datos personales
 - verifica todas las afirmaciones públicas con archivos fuente aprobados

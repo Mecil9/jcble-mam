@@ -1,46 +1,22 @@
 # Jcble_mam
 
-[简体中文](README.zh-CN.md) | [Español](README.es.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](README.md) | [简体中文](README.zh-CN.md) | [Español](README.es.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-`jcble-mam` is a general-purpose Codex skill for building and operating company content operations, copywriting workflows, online marketing promotion, and multi-Agent collaboration teams.
+`jcble-mam` is a Codex skill for company content operations, copywriting workflows, online marketing promotion, and multi-Agent session orchestration.
 
-Supported Markdown languages:
+It helps Codex work as a coordinated content and marketing team for document management, proposal writing, product copy, social media topics, visual briefs, market research, customer discovery, email outreach drafts, and weekly or monthly retrospectives.
 
-- Simplified Chinese `zh-CN`
-- English `en`
-- Spanish `es`
-- Japanese `ja`
-- Korean `ko`
+## What It Does
 
-## Use Cases
+- Creates a reusable company content and marketing Agent team.
+- Defines role Agents for editorial coordination, document management, proposal planning, copywriting, product copy, PPT planning, visual briefs, market intelligence, customer discovery, email drafting, review, and retrospectives.
+- Supports persistent Codex role sessions and a message-bus workflow.
+- Supports Markdown output in Simplified Chinese, English, Spanish, Japanese, and Korean.
+- Keeps external-facing content tied to approved evidence and human review.
 
-- Company document management
-- Solution planning and proposal writing
-- Social media topic planning
-- Company and solution PPT planning
-- Product copywriting
-- Product, solution, and promotional visual briefs
-- Global market intelligence
-- Industry-news tracking
-- Overseas customer discovery
-- Outreach email drafts
-- Weekly and monthly content, platform, and lead retrospectives
-- Persistent multi-Agent Codex session setup
-- Multilingual Markdown creation, translation, and localization
+## Install For Codex
 
-## Skill Name
-
-The installable skill name is:
-
-```text
-jcble-mam
-```
-
-`Jcble_mam` is kept as the display name and user-facing alias. The workflow is generic and can be adapted to any company.
-
-## Install
-
-Clone this repository into a Codex skills directory:
+Clone this repository into your Codex skills directory:
 
 ```bash
 git clone https://github.com/Mecil9/jcble-mam.git ~/.agents/skills/jcble-mam
@@ -48,9 +24,35 @@ git clone https://github.com/Mecil9/jcble-mam.git ~/.agents/skills/jcble-mam
 
 Then start a new Codex session so the skill registry can refresh.
 
-## Configuration
+If your Codex setup uses a different skills directory, clone the repository there and keep the folder name as:
 
-Before using the skill, adapt these placeholders to your own workspace:
+```text
+jcble-mam
+```
+
+## Basic Usage
+
+After installation, ask Codex in natural language. Examples:
+
+```text
+Use jcble-mam to create a content and marketing Agent team for my company.
+```
+
+```text
+Use jcble-mam to turn this product document into website copy and an outreach email draft.
+```
+
+```text
+Use jcble-mam to create independent Codex sessions for the editor, copywriter, market research, visual brief, and review Agents.
+```
+
+```text
+Use jcble-mam to write this proposal summary in English, Spanish, Japanese, and Korean.
+```
+
+## Workspace Configuration
+
+Before using the skill with company files, map these placeholders to your own workspace:
 
 ```text
 COMPANY_WORKSPACE=/path/to/company/workspace
@@ -60,11 +62,11 @@ COMPANY_MARKETING_WORKSPACE=/path/to/company/content-marketing-workspace
 
 If your company uses different directory names, update the reference files or create equivalent index files.
 
-## Main Files
+## Included Files
 
 - `SKILL.md` - trigger conditions and core workflow
 - `references/agent-team-roles.md` - multi-Agent role library
-- `references/session-orchestration.md` - Codex thread creation, naming, synchronization, and message routing
+- `references/session-orchestration.md` - Codex session creation, naming, synchronization, and message routing
 - `references/company-material-boundaries.md` - company material boundaries and sensitive-data rules
 - `references/multilingual-workflow.md` - multilingual Markdown rules, localization boundaries, and review checklist
 - `assets/task-card-template.md` - task-card template
@@ -73,7 +75,7 @@ If your company uses different directory names, update the reference files or cr
 
 ## Safety Notes
 
-Before publishing externally:
+Before publishing or sending anything externally:
 
 - remove confidential customer, contract, finance, payroll, credential, and personal data
 - verify all public claims against approved source files

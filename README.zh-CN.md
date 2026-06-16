@@ -1,56 +1,58 @@
 # Jcble_mam
 
-[English](README.en.md) | [Español](README.es.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](README.md) | 简体中文 | [Español](README.es.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-`jcble-mam` 是一个通用的 Codex skill，用于搭建和运行公司内容管理、文案助理、线上市场推广和多 Agent 协作团队。
+`jcble-mam` 是一个面向 Codex 的 skill，用于公司内容运营、文案工作流、线上市场推广和多 Agent 会话协作。
 
-支持的 Markdown 语言：
+它可以让 Codex 像一个协同的内容与市场团队一样工作，覆盖文档管理、方案写作、产品文案、自媒体选题、视觉设计简报、市场调研、客户寻找、邮件触达草稿，以及周报/月报复盘。
 
-- 简体中文 `zh-CN`
-- 英文 `en`
-- 西班牙语 `es`
-- 日语 `ja`
-- 韩语 `ko`
+## 主要能力
 
-## 适用场景
+- 创建可复用的公司内容与市场推广 Agent 团队。
+- 定义主控总编、文档管理、方案策划、文案写作、产品文案、PPT 制作、视觉设计、市场情报、客户挖掘、邮件触达、审核合规和复盘分析等角色。
+- 支持持久化 Codex 角色会话和消息总线协作流程。
+- 支持简体中文、英文、西班牙语、日语、韩语 Markdown 输出。
+- 对外内容必须基于已批准证据，并保留人工审核边界。
 
-- 公司文档管理
-- 方案策划与方案写作
-- 自媒体选题
-- 公司 PPT 和方案 PPT 制作
-- 产品文案写作
-- 产品图、方案图、宣传图的设计简报
-- 全球市场信息收集
-- 行业新闻追踪
-- 海外客户寻找
-- 邮件触达草稿
-- 每周和每月内容、平台、线索数据复盘
-- 持久化多 Agent Codex 会话搭建
-- 多语言 Markdown 创建、翻译和本地化
+## Codex 安装方式
 
-## Skill 名称
-
-可安装的 skill 名称是：
-
-```text
-jcble-mam
-```
-
-`Jcble_mam` 保留为显示名称和用户可见别名。工作流是通用版本，可适配任何公司。
-
-## 安装
-
-把仓库克隆到 Codex skills 目录：
+把这个仓库克隆到 Codex skills 目录：
 
 ```bash
 git clone https://github.com/Mecil9/jcble-mam.git ~/.agents/skills/jcble-mam
 ```
 
-然后开启新的 Codex 会话，让 skill 注册表刷新。
+然后开启一个新的 Codex 会话，让 skill 注册表刷新。
 
-## 配置
+如果你的 Codex 使用不同的 skills 目录，把仓库克隆到对应目录，并保持文件夹名称为：
 
-使用前，把这些占位路径替换为自己的公司工作区：
+```text
+jcble-mam
+```
+
+## 使用方法简介
+
+安装后，直接用自然语言让 Codex 调用。示例：
+
+```text
+使用 jcble-mam 为我的公司创建一个内容与市场推广 Agent 团队。
+```
+
+```text
+使用 jcble-mam 把这份产品资料改写成官网文案和邮件触达草稿。
+```
+
+```text
+使用 jcble-mam 创建主控总编、文案、市场情报、视觉设计和审核 Agent 的独立 Codex 会话。
+```
+
+```text
+使用 jcble-mam 把这份方案摘要写成英文、西班牙语、日语和韩语版本。
+```
+
+## 工作区配置
+
+在使用公司资料前，把这些占位路径映射到你自己的工作区：
 
 ```text
 COMPANY_WORKSPACE=/path/to/company/workspace
@@ -58,9 +60,9 @@ COMPANY_KNOWLEDGE_BASE=/path/to/company/knowledge-base
 COMPANY_MARKETING_WORKSPACE=/path/to/company/content-marketing-workspace
 ```
 
-如果你的公司使用不同目录名称，可以更新 reference 文件，或创建等价的索引文件。
+如果你的公司使用不同目录名称，可以更新 reference 文件，或创建等价索引文件。
 
-## 主要文件
+## 包含文件
 
 - `SKILL.md` - 触发条件和核心工作流
 - `references/agent-team-roles.md` - 多 Agent 角色库
@@ -73,7 +75,7 @@ COMPANY_MARKETING_WORKSPACE=/path/to/company/content-marketing-workspace
 
 ## 安全说明
 
-对外发布前：
+对外发布或发送前：
 
 - 删除客户、合同、财务、工资、凭证、个人资料等敏感信息
 - 用已批准资料核对所有公开声明
