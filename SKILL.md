@@ -1,35 +1,35 @@
 ---
 name: jcble-mam
-description: This skill should be used for JCBLE company management, copywriting assistant operations, online market promotion, and multi-Agent content team setup. Use it when creating or running the Jcble_mam Agent team, building independent Codex role sessions, coordinating document management, solution writing, product copy, PPT work, visual briefs, global market research, customer discovery, email outreach drafts, and weekly or monthly performance reviews.
+description: This skill should be used for company content operations, copywriting assistant workflows, online market promotion, and multi-Agent marketing team setup. Use it when creating or running a reusable company content and marketing Agent team, building independent Codex role sessions, coordinating document management, solution writing, product copy, PPT work, visual briefs, market research, customer discovery, email outreach drafts, and weekly or monthly performance reviews.
 ---
 
 # Jcble_mam
 
 ## Overview
 
-Operate JCBLE's management, copywriting, and online market-promotion Agent team. Create and coordinate a reusable multi-Agent system for document management, solution planning, content production, product copy, PPT preparation, visual design briefs, market intelligence, industry-news tracking, overseas customer discovery, email outreach drafting, review checks, and platform-data retrospectives.
+Operate a company's content, copywriting, and online market-promotion Agent team. Create and coordinate a reusable multi-Agent system for document management, solution planning, content production, product copy, PPT preparation, visual design briefs, market intelligence, industry-news tracking, customer discovery, outreach email drafting, review checks, and platform-data retrospectives.
 
 ## When To Use
 
 Use this skill when the task asks to:
 
-- Create or update the JCBLE content, management, marketing, or copywriting Agent team.
-- Build independent Codex sessions for JCBLE role Agents and name those sessions.
-- Coordinate multiple JCBLE writing, solution, market, visual, email, or review Agents.
-- Produce JCBLE task cards, evidence packs, content drafts, customer outreach drafts, or weekly/monthly review outputs.
-- Set up or maintain the JCBLE Agent session index, message bus, and collaboration protocol.
+- Create or update a company content, marketing, or copywriting Agent team.
+- Build independent Codex sessions for role Agents and name those sessions.
+- Coordinate multiple writing, solution, market, visual, email, or review Agents.
+- Produce task cards, evidence packs, content drafts, customer outreach drafts, or weekly/monthly review outputs.
+- Set up or maintain an Agent session index, message bus, and collaboration protocol.
 
 ## First Checks
 
 Before planning or writing:
 
-1. Read `JCBLE_WORKSPACE/AGENTS.md`.
-2. Read `JCBLE_WORKSPACE/00.JCBLE资料库-Obsidian关联索引.md` when company material, solutions, products, market work, or business planning is involved.
-3. Read `JCBLE_WORKSPACE/08.团队管理/JCBLE文案团队/01.JCBLE文案团队运行手册.md` when it exists.
+1. Read `COMPANY_WORKSPACE/AGENTS.md` or equivalent workspace instructions when available.
+2. Read `COMPANY_WORKSPACE/00.company-material-index.md` or equivalent company-material index when company material, solutions, products, market work, or business planning is involved.
+3. Read `COMPANY_MARKETING_WORKSPACE/01.company-content-marketing-team-manual.md` when an existing team manual exists.
 4. Read the session index and communication files when coordinating existing Agents:
-   - `JCBLE_WORKSPACE/08.团队管理/JCBLE文案团队/07.Agent会话与消息总线/00.Agent会话索引.md`
-   - `JCBLE_WORKSPACE/08.团队管理/JCBLE文案团队/07.Agent会话与消息总线/01.消息总线.md`
-   - `JCBLE_WORKSPACE/08.团队管理/JCBLE文案团队/07.Agent会话与消息总线/02.协作协议.md`
+   - `COMPANY_MARKETING_WORKSPACE/agent-sessions/00.agent-session-index.md`
+   - `COMPANY_MARKETING_WORKSPACE/agent-sessions/01.message-bus.md`
+   - `COMPANY_MARKETING_WORKSPACE/agent-sessions/02.collaboration-protocol.md`
 
 ## Core Workflow
 
@@ -47,10 +47,10 @@ Before planning or writing:
 When asked to create independent Agent sessions:
 
 1. Search for Codex thread tools with `tool_search` using terms such as `create_thread set_thread_title send_message_to_thread list_threads`.
-2. Create one thread per role using the local JCBLE project target when available.
-3. Name every thread with the pattern `JCBLE文案团队-<角色>Agent`.
+2. Create one thread per role using the local company project target when available.
+3. Name every thread with the pattern `<CompanyOrTeamName>-<Role>Agent`.
 4. Write every thread ID into the session index.
-5. Send each thread an initialization prompt that says to read the JCBLE rules, role index, message bus, and collaboration protocol, then stay idle until assigned.
+5. Send each thread an initialization prompt that says to read the company rules, role index, message bus, and collaboration protocol, then stay idle until assigned.
 6. Explain that cross-thread work is coordinated by explicit messages and the shared message bus, not by automatic always-on listening.
 
 Load `references/session-orchestration.md` before creating or updating threads.
@@ -68,7 +68,7 @@ Load `references/session-orchestration.md` before creating or updating threads.
 
 - `references/agent-team-roles.md` - Role library, responsibilities, outputs, and acceptance criteria.
 - `references/session-orchestration.md` - Independent Codex thread creation, naming, synchronization, and communication workflow.
-- `references/jcble-material-boundaries.md` - JCBLE source map, evidence rules, and sensitive-data boundaries.
+- `references/company-material-boundaries.md` - Company source map, evidence rules, and sensitive-data boundaries.
 - `assets/task-card-template.md` - Task-card template for new work.
 - `assets/message-template.md` - Message-bus entry template.
 - `assets/retrospective-template.md` - Weekly/monthly review template.

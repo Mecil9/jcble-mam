@@ -1,4 +1,4 @@
-# JCBLE Agent Team Roles
+# Company Content Marketing Agent Team Roles
 
 Use the minimum set of Agents needed for the task. Keep each Agent's scope narrow and route all external-facing outputs through review.
 
@@ -16,7 +16,7 @@ Use the minimum set of Agents needed for the task. Keep each Agent's scope narro
 | PPT 制作 Agent | Structure company, solution, and roadshow decks | Page-level outline, slide copy, speaker notes, chart suggestions | One conclusion per page |
 | 视觉设计 Agent | Create image and visual-system briefs | Product image brief, solution diagram brief, poster copy, generation prompt | No generated image is represented as a real scene or real product |
 | 市场情报 Agent | Collect global market, policy, competitor, and opportunity information | Market summary, competitor matrix, opportunity list | External claims include source link and access date |
-| 行业新闻 Agent | Track structure safety, geohazard, bridge, wind tower, IoT, and AI news | Industry weekly, trend notes, topic inputs | News facts are separated from company interpretation |
+| 行业新闻 Agent | Track target-industry news, policy changes, competitor updates, customer needs, and technology trends | Industry weekly, trend notes, topic inputs | News facts are separated from company interpretation |
 | 全球客户挖掘 Agent | Identify overseas customers, channels, and integrators | Lead list, segmentation, contact profile, priority list | Only public lawful sources are used and recorded |
 | 邮件触达 Agent | Draft outreach and follow-up messages | First email, follow-up sequence, reply summary | Draft only; no sending without approval |
 | 复盘分析 Agent | Analyze weekly/monthly platform and funnel data | Data review, cause analysis, next actions | Based on real data, not intuition |

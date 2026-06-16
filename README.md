@@ -1,6 +1,6 @@
 # Jcble_mam
 
-`jcble-mam` is a Codex skill for building and operating a company management, copywriting assistant, and online market-promotion Agent team.
+`jcble-mam` is a Codex skill for building and operating a general company content, copywriting assistant, and online market-promotion Agent team.
 
 It packages a reusable workflow for:
 
@@ -25,7 +25,7 @@ The installable skill name is:
 jcble-mam
 ```
 
-`Jcble_mam` is kept as the display name and user-facing alias.
+`Jcble_mam` is kept as the display name and user-facing alias. The workflow is generic and can be adapted to any company.
 
 ## Install
 
@@ -39,21 +39,22 @@ Then start a new Codex session so the skill registry can refresh.
 
 ## Configuration
 
-This public version avoids hard-coded local paths. Before using the skill, adapt these placeholders to your own workspace:
+Before using the skill, adapt these placeholders to your own workspace:
 
 ```text
-JCBLE_WORKSPACE=/path/to/company/workspace
-JCBLE_OBSIDIAN_VAULT=/path/to/obsidian/vault
+COMPANY_WORKSPACE=/path/to/company/workspace
+COMPANY_KNOWLEDGE_BASE=/path/to/company/knowledge-base
+COMPANY_MARKETING_WORKSPACE=/path/to/company/content-marketing-workspace
 ```
 
-The references describe the expected files and folders. If your company uses different names, update the reference files or create equivalent index files.
+The references describe recommended files and folders. If a company uses different names, update the reference files or create equivalent index files.
 
 ## Main Files
 
 - `SKILL.md` - trigger conditions and core workflow
 - `references/agent-team-roles.md` - multi-Agent role library
 - `references/session-orchestration.md` - Codex thread creation, naming, synchronization, and message routing
-- `references/jcble-material-boundaries.md` - company material source map and sensitive-data boundaries
+- `references/company-material-boundaries.md` - company material source map and sensitive-data boundaries
 - `assets/task-card-template.md` - reusable task card
 - `assets/message-template.md` - message-bus entry template
 - `assets/retrospective-template.md` - weekly/monthly review template
